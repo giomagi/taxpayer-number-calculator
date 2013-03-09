@@ -1,16 +1,16 @@
 package calculator.model;
 
-import java.util.Date;
+import org.joda.time.LocalDate;
 
 public class Taxpayer {
 
     public final String firstname;
     public final String lastname;
     public final Sex sex;
-    public final Date birthdate;
+    public final LocalDate birthdate;
     public final String county;
 
-    public Taxpayer(String firstname, String lastname, Sex sex, Date birthdate, String county) {
+    public Taxpayer(String firstname, String lastname, Sex sex, LocalDate birthdate, String county) {
         validate(lastname);
         validate(county);
 
