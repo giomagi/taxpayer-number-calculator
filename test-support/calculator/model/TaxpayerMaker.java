@@ -16,7 +16,7 @@ public class TaxpayerMaker {
     public static final Property<Taxpayer, Date> birthdate = newProperty();
     public static final Property<Taxpayer, String> county = newProperty();
 
-    public static final Instantiator<Taxpayer> Person = new Instantiator<calculator.model.Taxpayer>() {
+    public static final Instantiator<Taxpayer> Taxpayer = new Instantiator<calculator.model.Taxpayer>() {
         @Override
         public Taxpayer instantiate(PropertyLookup<Taxpayer> lookup) {
             return new Taxpayer(lookup.valueOf(firstname, "first.name"),
